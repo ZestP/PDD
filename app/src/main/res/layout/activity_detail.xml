@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.heu.groupon.projectgroupon.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#eeeeee">
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="1200px"
+                android:id="@+id/detail_pics">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+                <TextView
+                    android:id="@+id/detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#ffffff"
+                    android:layout_gravity="center"
+                    android:text="￥30"
+                    android:textColor="#ff0000"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/detail_oriprice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:text="￥159"
+                    android:textColor="#555555"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/detail_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:text="已拼10000件"
+                    android:textColor="#555555"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:text="精品安卓图标sdkfjsdjfklsdjflsdfsfdsklfjsdfdskflsdlkfjdsl"
+                android:textColor="#000000"
+                android:textSize="23sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:divider="@drawable/spacer_medium"
+                android:showDividers="middle">
+                <TextView
+                    android:id="@+id/detail_groupinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:text="2人在拼单，可直接参与"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+                <ListView
+                    android:id="@+id/detail_grouplist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/spacer_medium"></ListView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:divider="@drawable/spacer_medium"
+                android:showDividers="middle">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:text="商品详情"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/detail_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#ffffff"
+                    android:layout_gravity="center"
+                    android:text="For the last thirty years, almost all games have used the same general technique—rasterization—to render images on screen.  While the internal representation of the game world is maintained as three dimensions, rasterization ultimately operates in two dimensions (the plane of the screen), with 3D primitives mapped onto it through transformation matrices.  Through approaches like z-buffering and occlusion culling, games have historically strived to minimize the number of spurious pixels rendered, as normally they do not contribute to the final frame.  And in a perfect world, the pixels rendered would be exactly those that are directly visible from the camera:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/spacer_medium"
+        android:showDividers="middle"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/detail_announce_single"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#ff8888"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="单独购买"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/detail_announce"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#ff0000"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="发起拼单"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

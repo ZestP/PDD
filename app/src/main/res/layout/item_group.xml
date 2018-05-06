@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<ImageView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:src="@drawable/ic_launcher_background"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="10dp"/>-->
+
+    <TextView
+        android:id="@+id/group_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:singleLine="false"
+        android:text="还差1人拼成\n剩余23:59:59.0" />
+    <Button
+        android:id="@+id/group_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg_5px"
+        android:backgroundTint="#ff0000"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="去拼单"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+</LinearLayout>
